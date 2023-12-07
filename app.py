@@ -9,7 +9,7 @@ from PIL import Image
 st.write('''#Diabetes Detection#
     Detect if someone has diabetes or not using Machine Learning & Python
 ''')
-img = Image.open('D:\\Diabetes prediction system\\Robot.jpeg')
+img = Image.open('D:\Diabetes prediction system\Robot.jpeg')
 st.image(image=img,caption='Machine Learning',use_column_width=True)
 
 # Displaying the data in a tabular format
