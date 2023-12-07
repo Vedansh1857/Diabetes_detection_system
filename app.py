@@ -11,7 +11,7 @@ st.write('''#Diabetes Detection#
 ''')
 
 # Displaying the data in a tabular format
-df = pd.read_csv('D:\Diabetes prediction system\diabetes.csv')
+df = pd.read_csv('diabetes.csv')
 st.subheader('Data Information : ')
 st.dataframe(data=df)
 
