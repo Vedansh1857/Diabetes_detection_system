@@ -10,6 +10,9 @@ st.write('''#Diabetes Detection#
     Detect if someone has diabetes or not using Machine Learning & Python
 ''')
 
+image = Image.open('Robot.jpeg')
+st.image(image, caption='ML', use_column_width=True)
+
 # Displaying the data in a tabular format
 df = pd.read_csv('diabetes.csv')
 st.subheader('Data Information : ')
@@ -44,7 +47,7 @@ def get_user_input():
     insulin = st.sidebar.slider('insulin', 0.0,846.0,36.0)
     bmi = st.sidebar.slider('BMI', 0.0,67.1,32.0)
     dpf = st.sidebar.slider('DPF', 0.078,2.42,0.3725)
-    age = st.sidebar.slider('age', 0,15,3)
+    age = st.sidebar.slider('age', 21,81,29)
 
     # Storing a dictionary into a variable
     user_data = {'pregnancies':pregnancies,
