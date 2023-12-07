@@ -29,11 +29,11 @@ x = df.iloc[:,0:8].values
 y = df.iloc[:,-1].values
 
 # Data standardization...
-scaler = StandardScaler()
-scaler.fit(x)
-standardized_data = scaler.transform(x)
-x = standardized_data
-y = df['Outcome']
+# scaler = StandardScaler()
+# scaler.fit(x)
+# standardized_data = scaler.transform(x)
+# x = standardized_data
+# y = df['Outcome']
 
 # Splitting the dataset into training & testing set
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
